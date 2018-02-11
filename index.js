@@ -4,5 +4,5 @@ const os = require('os')
 const bot = new TelegramBot('496635681:AAERY7MoU5-dyYdZimuE78Bh3ritduHbnIg', {polling: true})
 
 bot.on('message', msg => {
-	bot.sendMessage(msg.chat.id, 'hello from WIN ${msg.chat.id}')
+	bot.sendMessage(msg.chat.id, 'hello from WIN "${msg.chat.id}"')
 });
